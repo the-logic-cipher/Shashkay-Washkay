@@ -31,6 +31,20 @@ const productSchema = mongoose.Schema({
       },
     },
   ],
+  packaging:{
+    type:String,
+    default:'basic',
+  },
+  prescription:{
+    public_id: {
+      type: String,
+      // required: true,
+    },
+    url: {
+      type: String,
+      // required: true,
+    },
+  },
   category: {
     type: String,
     required: [true, "Please Enter Product Category"],
@@ -67,11 +81,11 @@ const productSchema = mongoose.Schema({
     },
   ],
 
-//   user: {
-//     type: mongoose.Schema.ObjectId,
-//     ref: "User",
-//     required: true,
-//   },
+  user: {
+    type: mongoose.Schema.ObjectId,
+    ref: "User",
+    required: true,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
