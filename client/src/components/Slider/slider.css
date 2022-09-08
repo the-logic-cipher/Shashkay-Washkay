@@ -1,0 +1,12 @@
+.text{
+    position: absolute;
+    top: 25%;
+    left: 200px;
+    max-width: 40%;
+  }
+  .text h4{
+    font-size: 28px;
+  }
+  .text h1{
+    font-size: 100px;
+  }

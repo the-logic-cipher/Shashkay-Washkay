@@ -1,0 +1,36 @@
+.cards .cards-img{
+    overflow: hidden;
+}
+.cards .cards-img img{
+    position: relative;
+    transition: 0.7s all ease-in-out;
+    width: 280px;
+}
+
+.cards .cards-img img:hover{
+    transform: scale(1.2);
+}
+.star{
+    color: rgb(236, 195, 59);
+}
+.cards .icons{
+    position: absolute;
+    transform: translate(39%, -180px);
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+.cards:hover .icons{
+    opacity: 1;
+}
+.cards .card-icons{
+    font-size: 36px;
+    background-color: white;
+    color: rgb(63, 62, 62);
+    padding: 7px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.cards .card-icons:hover{
+    transform: translateY(-8px);
+}
+

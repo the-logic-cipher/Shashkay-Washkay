@@ -1,0 +1,8 @@
+a{
+    border: 1px solid #243c68;
+    width: fit-content;
+    color: #243c68;
+}
+a:hover{
+    color: #243c68;
+}
